@@ -1,21 +1,34 @@
-#include<iostream>
-using namespace std;
-int highest(int a[],int n)
+//	Q4. Display various type or airthmatic operation using mixed data type
+#include <iostream.h>
+#include <conio.h>
+void main()
 {
-    int h=0;
-    for(int i=0;i<n;i++)
-    {
-        if(a[i]>h)
-            h=a[i];
-    }
-    return h;
-}
-int main()
-{
-    int i,a[10],n;
-    cout<<"How many Eement in array:";
-    cin>>n;
-    for(i=0;i<n;i++)
-        cin>>a[i];
-    cout<<"\nhighest is :"<<highest(a,n);
+	clrscr();     //for clear screen
+	int i1=10,i2=15;
+	float f1=10.50,f2=15.23;
+	cout<<"All Airthmetic operation is\n\n";
+	cout<<"Sum is \n";
+	cout<<i1<<"+"<<i2<<"="<<i1+i2<<endl;
+	cout<<f1<<"+"<<f2<<"="<<f1+f2<<endl;
+	cout<<i1<<"+"<<f2<<"="<<i1+f2<<endl;
+	cout<<f1<<"+"<<i2<<"="<<f1+i2<<endl<<endl;
+
+	cout<<"Subtraction is \n";
+	cout<<i1<<"-"<<i2<<"="<<i1-i2<<endl;
+	cout<<f1<<"-"<<f2<<"="<<f1-f2<<endl;
+	cout<<i1<<"-"<<f2<<"="<<i1-f2<<endl;
+	cout<<f1<<"-"<<i2<<"="<<f1-i2<<endl<<endl;
+
+	cout<<"Multiple is \n";
+	cout<<i1<<"*"<<i2<<"="<<i1*i2<<endl;
+	cout<<f1<<"*"<<f2<<"="<<f1*f2<<endl;
+	cout<<i1<<"*"<<f2<<"="<<i1*f2<<endl;
+	cout<<f1<<"*"<<i2<<"="<<f1*i2<<endl<<endl;
+
+	cout<<"Devide is \n";
+	cout<<i1<<"/"<<i2<<"="<<i1/i2<<endl;
+	cout<<f1<<"/"<<f2<<"="<<f1/f2<<endl;
+	cout<<i1<<"/"<<f2<<"="<<i1/f2<<endl;
+	cout<<f1<<"/"<<i2<<"="<<f1/i2<<endl<<endl;
+	getch();
 }

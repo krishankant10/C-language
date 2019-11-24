@@ -1,27 +1,18 @@
-#include<iostream>
-using namespace std;
-void sort(int a[],int n)
+//Q7. swaping two no
+#include <iostream.h>
+#include <conio.h>
+void main()
 {
-    for(int j=0;j<n;j++)
-    for(int i=0;i<n;i++)
-    {
-        if(a[i+1]<a[i])
-        {
-            int temp=a[i];
-            a[i]=a[i+1];
-            a[i+1]=temp;
-        }
-    }
-    cout<<"Sorting array is:";
-    for(int i=0;i<n;i++)
-        cout<<"\t"<<a[i];
-}
-int main()
-{
-    int a[100],i,n;
-    cout<<"Enter how many element in array : ";
-    cin>>n;
-    for(i=0;i<n;i++)
-        cin>>a[i];
-    sort(a,n);
+	clrscr();
+	int n1,n2;
+	cout<<"Enter First no: ";
+	cin>>n1;
+	cout<<"Enter Second No.: ";
+	cin>>n2;
+	int temp=n1;
+	n1=n2;
+	n2=temp;
+	cout<<"First Element is: "<<n2;
+	cout<<"\nSecond element is :"<<n1;
+	getch();
 }

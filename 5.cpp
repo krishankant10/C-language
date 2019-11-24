@@ -1,21 +1,17 @@
-#include<iostream>
-using namespace std;
-void prime(int a)
+//Q5. prefix or postfix operations
+#include <iostream.h>
+#include <conio.h>
+void main()
 {
-    int p=0;
-    for(int i=2 ;i<a;i++)
-        if(a%i==0)
-        p++;
-    if(p==0)
-        cout<<"Given no. is prime";
-    else
-        cout<<"Given no is not prime";
+	clrscr();
+	int i=1;
+	i++;  	//i=2 |1++=2
+	cout<<"i++ is :"<<i<<endl;
+	++i;	//i=3 |++2=3
+	cout<<"++i is :"<<i<<endl;
+	i--;	//i=2
+	cout<<"i-- is :"<<i<<endl;
+	--i;	//i=1
+	cout<<"--i is :"<<i<<endl;
+	getch();
 }
-int main()
-{
-    int a;
-    cout<<"Enter Any value :";
-    cin>>a;
-    prime(a);
-}
-

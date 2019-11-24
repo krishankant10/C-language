@@ -1,18 +1,15 @@
-#include<iostream>
-using namespace std;
-int sum(int n)
+//Q.10 volume of a cylinder
+#include <iostream.h>
+#include <conio.h>
+void main()
 {
-    if(n != 0)
-        return n + sum(n - 1);
-    return 0;
-}
-
-int main()
-{
-    int n;
-
-    cout << "Enter a positive integer: ";
-    cin >> n;
-    cout << "Sum =  " << sum(n);
-    return 0;
+	clrscr();
+	float height,radius,volume;
+	cout<<"Enter the height of the cylinder:";
+	cin>>height;
+	cout<<"Enter radius of the cylinder:";
+	cin>>radius;
+	volume=3.14*radius*radius*height;
+	cout<<"The volume of the cylinder is :"<<volume;
+	getch();
 }

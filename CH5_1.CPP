@@ -1,0 +1,1 @@
+1. Solution: The error extra parameter in call to Room ::setValue(int,int) in function main() occured, because setValue() is defined with 2 parameters but we are calling the function with 3 parameters.
