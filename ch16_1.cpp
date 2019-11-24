@@ -1,0 +1,1 @@
+1. Solution: When the constructor is defined with explicit keyword, then the intializing code such as B b1 = 12 is illegial. Hence, we need to change the code as, B b1 = new B(12). Otherwise, we have to remove the explicit keyword from the constructor of B.
